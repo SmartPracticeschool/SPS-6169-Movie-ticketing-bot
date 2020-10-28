@@ -1,0 +1,5040 @@
+{
+  "intents": [
+    {
+      "intent": "booking",
+      "examples": [
+        {
+          "text": "book a ticket please"
+        },
+        {
+          "text": "I want to book ticket"
+        },
+        {
+          "text": "Platinum - only few Tickets left"
+        },
+        {
+          "text": "ticket booking"
+        },
+        {
+          "text": "ticketing"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Can I have current English movies"
+        },
+        {
+          "text": "Can I have current Hindi movies"
+        },
+        {
+          "text": "Can I have current movies list"
+        },
+        {
+          "text": "Can I have current Telugu movies"
+        },
+        {
+          "text": "Can I have latest English movies"
+        },
+        {
+          "text": "Can I have latest Hindi movies"
+        },
+        {
+          "text": "Can I have latest Telugu movies"
+        },
+        {
+          "text": "Can I have new English movies"
+        },
+        {
+          "text": "Can I have new Hindi movies"
+        },
+        {
+          "text": "Can I have new Telugu movies"
+        },
+        {
+          "text": "Can you show the latest movies"
+        },
+        {
+          "text": "Can you show the new movies list"
+        },
+        {
+          "text": "I like to have the movie list"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "9874563210"
+        },
+        {
+          "text": "ga"
+        },
+        {
+          "text": "ge"
+        },
+        {
+          "text": "gm"
+        },
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "query",
+      "examples": [
+        {
+          "text": "I like to have movie list"
+        },
+        {
+          "text": "I like to have theatre list"
+        },
+        {
+          "text": "I want to search for a movie"
+        },
+        {
+          "text": "I want to search for a theatre"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Screens",
+      "examples": [
+        {
+          "text": "Can I have list of Theatres"
+        },
+        {
+          "text": "Can you list of screens"
+        },
+        {
+          "text": "List of Screens"
+        },
+        {
+          "text": "List of Theatres"
+        },
+        {
+          "text": "Screens please"
+        },
+        {
+          "text": "Theatres Please"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Bheeshma",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Megha Dilsukhnagar",
+          "synonyms": [
+            "Megha Dilsukhnagar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sandya 35MM RTC X Roads",
+          "synonyms": [
+            "Sandya 35MM RTC X Roads"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "booking",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "booking",
+          "synonyms": [
+            "book",
+            "bookings",
+            "ticketing"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Category",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gold",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "platinum",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "silver",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "date",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "date",
+          "patterns": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "English",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bloodshot",
+          "synonyms": [
+            "Bloodshot"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Scoobi",
+          "synonyms": [
+            "Scoobi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "The Jungle Book",
+          "synonyms": [
+            "Jungle Book",
+            "The Jungle Book"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "The Lion King",
+          "synonyms": [
+            "Lion King",
+            "The Lion King"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "English",
+          "synonyms": [
+            "English"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hindi",
+          "synonyms": [
+            "Hindi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Telugu",
+          "synonyms": [
+            "Telugu"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga",
+            "Good Afternoon",
+            "gud aftnoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "ge",
+            "Good Evening",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "Good Morning",
+            "gud mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": [
+            "hello",
+            "helo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "Hello",
+            "Hi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Hindi",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Gulabo Sitabo",
+          "synonyms": [
+            "Gulabo Sitabo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gunjan Saxsena",
+          "synonyms": [
+            "Gunjan Saxsena"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Malang",
+          "synonyms": [
+            "Malang"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Shakuntala Devi",
+          "synonyms": [
+            "Shakuntala Devi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mobile",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "mobile",
+          "patterns": [
+            "(0/91)?[6-9][0-9]{9}"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "name",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "name",
+          "patterns": [
+            "^[A-Za-z\\s]{1,}[\\.]{0,1}[A-Za-z\\s]{0,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Card",
+          "synonyms": [
+            "card"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": [
+            "Cash on Delivery"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "query",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "movie",
+          "synonyms": [
+            "episode",
+            "film",
+            "movies",
+            "video"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "theatre",
+          "synonyms": [
+            "ballet",
+            "broadway",
+            "cinema",
+            "opera",
+            "playhouse",
+            "repertory",
+            "teatro",
+            "theater",
+            "théâtre",
+            "theatres"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Sandya-35MM-RTC-X-ROADS",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "11 AM",
+          "synonyms": [
+            "11 AM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2 PM",
+          "synonyms": [
+            "2 PM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "6 PM",
+          "synonyms": [
+            "6 PM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "9 PM",
+          "synonyms": [
+            "9 PM"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Screens",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Big Bazaar",
+          "synonyms": [
+            "Big Bazaar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "IMAX",
+          "synonyms": [
+            "IMAX"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "INOX",
+          "synonyms": [
+            "INOX"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Konark",
+          "synonyms": [
+            "Konark"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kumar",
+          "synonyms": [
+            "Kumar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Megha",
+          "synonyms": [
+            "Megha"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PVR",
+          "synonyms": [
+            "PVR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rama Krishna",
+          "synonyms": [
+            "Rama Krishna"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sandhya 35 MM RTC X Roads",
+          "synonyms": [
+            "Sandhya 35 MM RTC X Roads"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Screens",
+          "synonyms": [
+            "cinemas",
+            "imax",
+            "projectors",
+            "screen",
+            "theaters"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sree Ramana 70MM",
+          "synonyms": [
+            "Sree Ramana 70MM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sudharshan 35 MM",
+          "synonyms": [
+            "Sudharshan 35 MM"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "theatres",
+          "synonyms": [
+            "auditoriums",
+            "ballrooms",
+            "cinemas",
+            "cineplex",
+            "cineworld",
+            "picturehouse",
+            "playhouses",
+            "theaters",
+            "theatre",
+            "venues"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Telugu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ala Vaikuntapuramlo",
+          "synonyms": [
+            "Ala Vaikuntapuramlo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bheeshma",
+          "synonyms": [
+            "Bheeshma"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Jaanu",
+          "synonyms": [
+            "Jaanu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "V",
+          "synonyms": [
+            "V"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_43_1603173152445",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you provide the number of tickets you want to book?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1603033973623",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1603033973673",
+      "previous_sibling": "handler_5_1603033973673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1603171713736",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_10_1603171713736"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please enter the date"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1603908098138",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1603908098140",
+      "previous_sibling": "handler_9_1603908098140"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We accept Net Banking, Card and UPI. What is your mode of payment?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Mode of Payment",
+            "options": [
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "Net Banking"
+                  }
+                }
+              },
+              {
+                "label": "Card",
+                "value": {
+                  "input": {
+                    "text": "Card"
+                  }
+                }
+              },
+              {
+                "label": "UPI",
+                "value": {
+                  "input": {
+                    "text": "UPI"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_9_1603171713736",
+      "event_name": "focus",
+      "dialog_node": "handler_11_1603171713736",
+      "previous_sibling": "handler_10_1603171713736"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_27_1603171727776",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_28_1603171727776"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you provide the number of tickets you want to book?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_27_1603171727776",
+      "event_name": "focus",
+      "dialog_node": "handler_29_1603171727776",
+      "previous_sibling": "handler_28_1603171727776"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_30_1603171727776",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_31_1603171727776"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We accept Net Banking, Card and UPI. What is your mode of payment?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Mode of Payment",
+            "options": [
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "Net Banking"
+                  }
+                }
+              },
+              {
+                "label": "Card",
+                "value": {
+                  "input": {
+                    "text": "Card"
+                  }
+                }
+              },
+              {
+                "label": "UPI",
+                "value": {
+                  "input": {
+                    "text": "UPI"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_30_1603171727776",
+      "event_name": "focus",
+      "dialog_node": "handler_32_1603171727776",
+      "previous_sibling": "handler_31_1603171727776"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1603034170399",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_4_1603034170410"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We accept Card and UPI. What is your mode of payment?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Mode of Payment",
+            "options": [
+              {
+                "label": "Card",
+                "value": {
+                  "input": {
+                    "text": "Card"
+                  }
+                }
+              },
+              {
+                "label": "UPI",
+                "value": {
+                  "input": {
+                    "text": "UPI"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_4_1603034170399",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1603034170411",
+      "previous_sibling": "handler_4_1603034170410"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_49_1603173152457",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_50_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you provide the number of tickets you want to book?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_49_1603173152457",
+      "event_name": "focus",
+      "dialog_node": "handler_51_1603173152457",
+      "previous_sibling": "handler_50_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1603033973623",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_5_1603033973673"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_52_1603173152457",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_53_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We accept Net Banking, Card and UPI. What is your mode of payment?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Mode of Payment",
+            "options": [
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "Net Banking"
+                  }
+                }
+              },
+              {
+                "label": "Card",
+                "value": {
+                  "input": {
+                    "text": "Card"
+                  }
+                }
+              },
+              {
+                "label": "UPI",
+                "value": {
+                  "input": {
+                    "text": "UPI"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_52_1603173152457",
+      "event_name": "focus",
+      "dialog_node": "handler_54_1603173152457",
+      "previous_sibling": "handler_53_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_70_1603173152457",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_71_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1603171713736",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_7_1603171713736"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you provide the number of tickets you want to book?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_70_1603173152457",
+      "event_name": "focus",
+      "dialog_node": "handler_72_1603173152457",
+      "previous_sibling": "handler_71_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_73_1603173152457",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_74_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We accept Net Banking, Card and UPI. What is your mode of payment?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Mode of Payment",
+            "options": [
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "Net Banking"
+                  }
+                }
+              },
+              {
+                "label": "Card",
+                "value": {
+                  "input": {
+                    "text": "Card"
+                  }
+                }
+              },
+              {
+                "label": "UPI",
+                "value": {
+                  "input": {
+                    "text": "UPI"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_73_1603173152457",
+      "event_name": "focus",
+      "dialog_node": "handler_75_1603173152457",
+      "previous_sibling": "handler_74_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you provide the number of tickets you want to book?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1603171713736",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1603171713736",
+      "previous_sibling": "handler_7_1603171713736"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1603908098138",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_9_1603908098140"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_91_1603173152457",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_92_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Can you provide the number of tickets you want to book?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_91_1603173152457",
+      "event_name": "focus",
+      "dialog_node": "handler_93_1603173152457",
+      "previous_sibling": "handler_92_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_94_1603173152457",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_95_1603173152457"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We accept Net Banking, Card and UPI. What is your mode of payment?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Mode of Payment",
+            "options": [
+              {
+                "label": "Net Banking",
+                "value": {
+                  "input": {
+                    "text": "Net Banking"
+                  }
+                }
+              },
+              {
+                "label": "Card",
+                "value": {
+                  "input": {
+                    "text": "Card"
+                  }
+                }
+              },
+              {
+                "label": "UPI",
+                "value": {
+                  "input": {
+                    "text": "UPI"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_94_1603173152457",
+      "event_name": "focus",
+      "dialog_node": "handler_96_1603173152457",
+      "previous_sibling": "handler_95_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Movie Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @Enquiry",
+      "dialog_node": "node_10_1602314657773",
+      "previous_sibling": "node_8_1602172720268"
+    },
+    {
+      "type": "standard",
+      "title": "Sandya 35MM RTC X Roads",
+      "parent": "node_4_1602477566838",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "node_1_1602322611762",
+      "previous_sibling": "response_4_1602477706233"
+    },
+    {
+      "type": "standard",
+      "title": "English",
+      "output": {},
+      "parent": "node_10_1602314657773",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@English",
+      "dialog_node": "node_1_1603171713726",
+      "previous_sibling": "node_22_1603171727765"
+    },
+    {
+      "type": "standard",
+      "title": "Theatre query",
+      "output": {
+        "generic": [
+          {
+            "title": "Screen Search",
+            "options": [
+              {
+                "label": "Sree Ramana 70 MM",
+                "value": {
+                  "input": {
+                    "text": "Sree Ramana 70 MM"
+                  }
+                }
+              },
+              {
+                "label": "INOX",
+                "value": {
+                  "input": {
+                    "text": "INOX"
+                  }
+                }
+              },
+              {
+                "label": "Sandya 35 MM RTC X Roads",
+                "value": {
+                  "input": {
+                    "text": "Sandya 35 MM RTC X Roads"
+                  }
+                }
+              },
+              {
+                "label": "Sudharshan 35 MM",
+                "value": {
+                  "input": {
+                    "text": "Sudharshan 35 MM"
+                  }
+                }
+              },
+              {
+                "label": "Megha",
+                "value": {
+                  "input": {
+                    "text": "Megha"
+                  }
+                }
+              },
+              {
+                "label": "Prasad's IMAX",
+                "value": {
+                  "input": {
+                    "text": "Prasad's IMAX"
+                  }
+                }
+              },
+              {
+                "label": "Konark",
+                "value": {
+                  "input": {
+                    "text": "Konark"
+                  }
+                }
+              },
+              {
+                "label": "PVR",
+                "value": {
+                  "input": {
+                    "text": "PVR"
+                  }
+                }
+              },
+              {
+                "label": "Big Bazaar",
+                "value": {
+                  "input": {
+                    "text": "Big Bazaar"
+                  }
+                }
+              },
+              {
+                "label": "Kumar",
+                "value": {
+                  "input": {
+                    "text": "Kumar"
+                  }
+                }
+              },
+              {
+                "label": "Rama Krishna",
+                "value": {
+                  "input": {
+                    "text": "Rama Krishna"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_121_1603173984201",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_43_1603173152445"
+      },
+      "conditions": "#query || @query:theatre",
+      "dialog_node": "node_1_1603865045645",
+      "previous_sibling": "node_9_1603865184943"
+    },
+    {
+      "type": "standard",
+      "title": "name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for providing your name"
+              },
+              {
+                "text": "You can search either Movies or Theatres"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Movie Search",
+            "options": [
+              {
+                "label": "Movies",
+                "value": {
+                  "input": {
+                    "text": "Movies"
+                  }
+                }
+              },
+              {
+                "label": "Theatres",
+                "value": {
+                  "input": {
+                    "text": "Theatres"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "@name.literal"
+      },
+      "conditions": "@name",
+      "dialog_node": "node_121_1603173984201"
+    },
+    {
+      "type": "standard",
+      "title": "contact",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets on $date, pay Rs.<? $number * 150 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email . Thank you for using our services"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1603033828526",
+      "context": {
+        "email": "@email.literal",
+        "mobile": "@mobile.literal"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@mobile",
+      "dialog_node": "node_122_1603174795246"
+    },
+    {
+      "type": "standard",
+      "title": "Bheeshma",
+      "output": {},
+      "parent": "node_1_1603171713726",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Bheeshma",
+      "dialog_node": "node_2_1603171713735"
+    },
+    {
+      "type": "standard",
+      "title": "Hindi",
+      "output": {},
+      "parent": "node_10_1602314657773",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Hindi",
+      "dialog_node": "node_22_1603171727765",
+      "previous_sibling": "node_3_1602316641677"
+    },
+    {
+      "type": "standard",
+      "title": "Bheeshma",
+      "output": {},
+      "parent": "node_22_1603171727765",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Bheeshma",
+      "dialog_node": "node_23_1603171727776"
+    },
+    {
+      "type": "standard",
+      "title": "Sandya 35MM RTC X Roads",
+      "output": {},
+      "parent": "node_23_1603171727776",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "node_24_1603171727776",
+      "previous_sibling": "response_38_1603171727776"
+    },
+    {
+      "type": "frame",
+      "title": "booking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets for $telugu pay Rs.<? $number * 100 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1603171727776",
+      "conditions": "#booking && @booking:booking",
+      "dialog_node": "node_25_1603171727776"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context",
+      "output": {
+        "deleted": "<?context.remove('name')?><?context.remove('number')?><?context.remove('mobile')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_25_1603171727776",
+      "conditions": "true",
+      "dialog_node": "node_26_1603171727776"
+    },
+    {
+      "type": "standard",
+      "title": "Telugu",
+      "parent": "node_10_1602314657773",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Telugu",
+      "dialog_node": "node_3_1602316641677",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "frame",
+      "title": "booking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please provide your contact details: Mobile Number and Email id"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1602322611762",
+      "context": {},
+      "conditions": "#booking && @booking:booking",
+      "dialog_node": "node_3_1603033828526",
+      "digress_out": "allow_all",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context",
+      "output": {
+        "deleted": "<?context.remove('name')?><?context.remove('number')?><?context.remove('mobile')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1603033828526",
+      "conditions": "true",
+      "dialog_node": "node_3_1603094899378",
+      "previous_sibling": "node_122_1603174795246"
+    },
+    {
+      "type": "standard",
+      "title": "Sandya 35MM RTC X Roads",
+      "output": {},
+      "parent": "node_2_1603171713735",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "node_3_1603171713735",
+      "previous_sibling": "response_17_1603171713736"
+    },
+    {
+      "type": "standard",
+      "title": "Bheeshma",
+      "parent": "node_3_1602316641677",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Bheeshma",
+      "dialog_node": "node_4_1602477566838"
+    },
+    {
+      "type": "frame",
+      "title": "booking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets for $telugu pay Rs.<? $number * 100 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1603171713735",
+      "conditions": "#booking && @booking:booking",
+      "dialog_node": "node_4_1603171713735"
+    },
+    {
+      "type": "standard",
+      "title": "display",
+      "parent": "node_122_1603174795246",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Category",
+      "dialog_node": "node_4_1603907099179"
+    },
+    {
+      "type": "standard",
+      "title": "Screen Enquiry",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Screens || @Screens",
+      "dialog_node": "node_43_1603173152445",
+      "previous_sibling": "node_10_1602314657773"
+    },
+    {
+      "type": "standard",
+      "title": "Telugu",
+      "output": {},
+      "parent": "node_43_1603173152445",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Telugu",
+      "dialog_node": "node_44_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Bheeshma",
+      "output": {},
+      "parent": "node_44_1603173152457",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Bheeshma",
+      "dialog_node": "node_45_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Sandya 35MM RTC X Roads",
+      "output": {},
+      "parent": "node_45_1603173152457",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "node_46_1603173152457",
+      "previous_sibling": "response_60_1603173152457"
+    },
+    {
+      "type": "frame",
+      "title": "booking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets for $telugu pay Rs.<? $number * 100 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_46_1603173152457",
+      "conditions": "#booking && @booking:booking",
+      "dialog_node": "node_47_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context",
+      "output": {
+        "deleted": "<?context.remove('name')?><?context.remove('number')?><?context.remove('mobile')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_47_1603173152457",
+      "conditions": "true",
+      "dialog_node": "node_48_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context",
+      "output": {
+        "deleted": "<?context.remove('name')?><?context.remove('number')?><?context.remove('mobile')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1603171713735",
+      "conditions": "true",
+      "dialog_node": "node_5_1603171713735"
+    },
+    {
+      "type": "standard",
+      "title": "Hindi",
+      "output": {},
+      "parent": "node_43_1603173152445",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Hindi",
+      "dialog_node": "node_65_1603173152457",
+      "previous_sibling": "node_44_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Bheeshma",
+      "output": {},
+      "parent": "node_65_1603173152457",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Bheeshma",
+      "dialog_node": "node_66_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Sandya 35MM RTC X Roads",
+      "output": {},
+      "parent": "node_66_1603173152457",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "node_67_1603173152457",
+      "previous_sibling": "response_81_1603173152457"
+    },
+    {
+      "type": "frame",
+      "title": "booking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets for $telugu pay Rs.<? $number * 100 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_67_1603173152457",
+      "conditions": "#booking && @booking:booking",
+      "dialog_node": "node_68_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context",
+      "output": {
+        "deleted": "<?context.remove('name')?><?context.remove('number')?><?context.remove('mobile')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_68_1603173152457",
+      "conditions": "true",
+      "dialog_node": "node_69_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_8_1602172720268",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "English",
+      "output": {},
+      "parent": "node_43_1603173152445",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@English",
+      "dialog_node": "node_86_1603173152457",
+      "previous_sibling": "node_65_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Bheeshma",
+      "output": {},
+      "parent": "node_86_1603173152457",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Bheeshma",
+      "dialog_node": "node_87_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Sandya 35MM RTC X Roads",
+      "output": {},
+      "parent": "node_87_1603173152457",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "node_88_1603173152457",
+      "previous_sibling": "response_102_1603173152457"
+    },
+    {
+      "type": "frame",
+      "title": "booking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets for $telugu pay Rs.<? $number * 100 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_88_1603173152457",
+      "conditions": "#booking && @booking:booking",
+      "dialog_node": "node_89_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context",
+      "output": {
+        "deleted": "<?context.remove('name')?><?context.remove('number')?><?context.remove('mobile')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_89_1603173152457",
+      "conditions": "true",
+      "dialog_node": "node_90_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Movie query",
+      "output": {
+        "generic": [
+          {
+            "title": "Movie Search",
+            "options": [
+              {
+                "label": "Telugu",
+                "value": {
+                  "input": {
+                    "text": "Telugu"
+                  }
+                }
+              },
+              {
+                "label": "Hindi",
+                "value": {
+                  "input": {
+                    "text": "Hindi"
+                  }
+                }
+              },
+              {
+                "label": "English",
+                "value": {
+                  "input": {
+                    "text": "English"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_121_1603173984201",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1602314657773"
+      },
+      "conditions": "#query || @query:movie",
+      "dialog_node": "node_9_1603865184943"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 200/-  Gold - Rs. 150/-  Silver - Rs. 100/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 16 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 16 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 26 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 26 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 36 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 36 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_88_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(9 PM)",
+      "dialog_node": "response_100_1603173152457",
+      "previous_sibling": "response_99_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "11 AM",
+                "value": {
+                  "input": {
+                    "text": "11 AM"
+                  }
+                }
+              },
+              {
+                "label": "2 PM",
+                "value": {
+                  "input": {
+                    "text": "2 PM"
+                  }
+                }
+              },
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              },
+              {
+                "label": "9 PM",
+                "value": {
+                  "input": {
+                    "text": "9 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_87_1603173152457",
+      "conditions": "@Bheeshma:(Sandya 35MM RTC X Roads)",
+      "dialog_node": "response_101_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Telugu Movies ",
+            "options": [
+              {
+                "label": "V",
+                "value": {
+                  "input": {
+                    "text": "V"
+                  }
+                }
+              },
+              {
+                "label": "Ala Vaikuntapuramulo",
+                "value": {
+                  "input": {
+                    "text": "Ala Vaikuntapuramulo"
+                  }
+                }
+              },
+              {
+                "label": "Bheeshma",
+                "value": {
+                  "input": {
+                    "text": "Bheeshma"
+                  }
+                }
+              },
+              {
+                "label": "Jaanu",
+                "value": {
+                  "input": {
+                    "text": "Jaanu"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602314657773",
+      "conditions": "@Enquiry:Telugu",
+      "dialog_node": "response_10_1602314767940",
+      "previous_sibling": "node_1_1603171713726"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category  ",
+            "options": [
+              {
+                "label": "Platinum - only few Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - only few Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - very few tickets ",
+                "value": {
+                  "input": {
+                    "text": "Gold - very few tickets "
+                  }
+                }
+              },
+              {
+                "label": "Silver - good number of tickets left",
+                "value": {
+                  "input": {
+                    "text": "Silver - good number of tickets left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1602322611762",
+      "context": {
+        "Category": "Category"
+      },
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(11 AM)",
+      "dialog_node": "response_10_1602322856867",
+      "previous_sibling": "node_3_1603033828526"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_87_1603173152457",
+      "conditions": "@Bheeshma:(Megha Dilsukhnagar)",
+      "dialog_node": "response_102_1603173152457",
+      "previous_sibling": "response_101_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Big Bazaar",
+                "value": {
+                  "input": {
+                    "text": "Big Bazaar"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_86_1603173152457",
+      "conditions": "@English:Bloodshot",
+      "dialog_node": "response_103_1603173152457",
+      "previous_sibling": "node_87_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "In Following Screens",
+            "options": [
+              {
+                "label": "IMAX",
+                "value": {
+                  "input": {
+                    "text": "IMAX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_86_1603173152457",
+      "conditions": "@English:(The Jungle Book)",
+      "dialog_node": "response_104_1603173152457",
+      "previous_sibling": "response_103_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "PVR",
+                "value": {
+                  "input": {
+                    "text": "PVR"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_86_1603173152457",
+      "conditions": "@English:Scoobi",
+      "dialog_node": "response_105_1603173152457",
+      "previous_sibling": "response_104_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "INOX",
+                "value": {
+                  "input": {
+                    "text": "INOX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_86_1603173152457",
+      "conditions": "@English:(The Lion King)",
+      "dialog_node": "response_106_1603173152457",
+      "previous_sibling": "response_105_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "V",
+                "value": {
+                  "input": {
+                    "text": "V"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:Kumar",
+      "dialog_node": "response_110_1603173152457",
+      "previous_sibling": "node_86_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing Movies",
+            "options": [
+              {
+                "label": "The Jungle Book",
+                "value": {
+                  "input": {
+                    "text": "The Jungle Book"
+                  }
+                }
+              },
+              {
+                "label": "Gunjan Saxsena",
+                "value": {
+                  "input": {
+                    "text": "Gunjan Saxsena"
+                  }
+                }
+              },
+              {
+                "label": "Ala Vaikuntapuramulo",
+                "value": {
+                  "input": {
+                    "text": "Ala Vaikuntapuramulo"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:IMAX",
+      "dialog_node": "response_111_1603173152457",
+      "previous_sibling": "response_110_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "The Lion King",
+                "value": {
+                  "input": {
+                    "text": "The Lion King"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:INOX",
+      "dialog_node": "response_112_1603173152457",
+      "previous_sibling": "response_111_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "Jaanu",
+                "value": {
+                  "input": {
+                    "text": "Jaanu"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:Megha",
+      "dialog_node": "response_113_1603173152457",
+      "previous_sibling": "response_112_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "Scoobi",
+                "value": {
+                  "input": {
+                    "text": "Scoobi"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:PVR",
+      "dialog_node": "response_114_1603173152457",
+      "previous_sibling": "response_113_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "Bloodshot",
+                "value": {
+                  "input": {
+                    "text": "Bloodshot"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:(Big Bazaar)",
+      "dialog_node": "response_115_1603173152457",
+      "previous_sibling": "response_114_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://www.seelatest.com/images/jaanu-movie-review-and-rating-a-must-watchable-movie-of-samantha-and-sharwanand-with-perfect-drama.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_3_1602316641677",
+      "conditions": "@Telugu:Jaanu",
+      "dialog_node": "response_1_1602322232417",
+      "previous_sibling": "node_4_1602477566838"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "Malang",
+                "value": {
+                  "input": {
+                    "text": "Malang"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:(Rama Krishna)",
+      "dialog_node": "response_116_1603173152457",
+      "previous_sibling": "response_115_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "Shakuntala Devi",
+                "value": {
+                  "input": {
+                    "text": "Shakuntala Devi"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:(Sree Ramana 70MM)",
+      "dialog_node": "response_117_1603173152457",
+      "previous_sibling": "response_116_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies showing",
+            "options": [
+              {
+                "label": "V",
+                "value": {
+                  "input": {
+                    "text": "V"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:Konark",
+      "dialog_node": "response_118_1603173152457",
+      "previous_sibling": "response_117_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies showing",
+            "options": [
+              {
+                "label": "Ala Vaikuntapuramulo",
+                "value": {
+                  "input": {
+                    "text": "Ala Vaikuntapuramulo"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:(Sudharshan 35 MM)",
+      "dialog_node": "response_119_1603173152457",
+      "previous_sibling": "response_118_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Movies Showing",
+            "options": [
+              {
+                "label": "Bheeshma",
+                "value": {
+                  "input": {
+                    "text": "Bheeshma"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_43_1603173152445",
+      "conditions": "@Screens:(Sandhya 35 MM RTC X Roads)",
+      "dialog_node": "response_120_1603173152457",
+      "previous_sibling": "response_119_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category  ",
+            "options": [
+              {
+                "label": "Platinum - only few Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - only few Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 30 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 30 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 50 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 50 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1603171713735",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(11 AM)",
+      "dialog_node": "response_12_1603171713736",
+      "previous_sibling": "node_4_1603171713735"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 32 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 32 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 45 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 45 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 20 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 20 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1603171713735",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(2 PM)",
+      "dialog_node": "response_13_1603171713736",
+      "previous_sibling": "response_12_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Platinum - 15 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 15 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 33 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 33 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 22 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 22 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1603171713735",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "response_14_1603171713736",
+      "previous_sibling": "response_13_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 200/-  Gold - Rs. 150/-  Silver - Rs. 100/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 16 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 16 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 26 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 26 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 36 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 36 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1603171713735",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(9 PM)",
+      "dialog_node": "response_15_1603171713736",
+      "previous_sibling": "response_14_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "11 AM",
+                "value": {
+                  "input": {
+                    "text": "11 AM"
+                  }
+                }
+              },
+              {
+                "label": "2 PM",
+                "value": {
+                  "input": {
+                    "text": "2 PM"
+                  }
+                }
+              },
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              },
+              {
+                "label": "9 PM",
+                "value": {
+                  "input": {
+                    "text": "9 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1603171713735",
+      "conditions": "@Bheeshma:(Sandya 35MM RTC X Roads)",
+      "dialog_node": "response_16_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1603171713735",
+      "conditions": "@Bheeshma:(Megha Dilsukhnagar)",
+      "dialog_node": "response_17_1603171713736",
+      "previous_sibling": "response_16_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Big Bazaar",
+                "value": {
+                  "input": {
+                    "text": "Big Bazaar"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603171713726",
+      "conditions": "@English:Bloodshot",
+      "dialog_node": "response_18_1603171713736",
+      "previous_sibling": "node_2_1603171713735"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "In Following Screens",
+            "options": [
+              {
+                "label": "IMAX",
+                "value": {
+                  "input": {
+                    "text": "IMAX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603171713726",
+      "conditions": "@English:(The Jungle Book)",
+      "dialog_node": "response_19_1603171713736",
+      "previous_sibling": "response_18_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "PVR",
+                "value": {
+                  "input": {
+                    "text": "PVR"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603171713726",
+      "conditions": "@English:Scoobi",
+      "dialog_node": "response_20_1603171713736",
+      "previous_sibling": "response_19_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "INOX",
+                "value": {
+                  "input": {
+                    "text": "INOX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1603171713726",
+      "conditions": "@English:(The Lion King)",
+      "dialog_node": "response_21_1603171713736",
+      "previous_sibling": "response_20_1603171713736"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening $name"
+              },
+              {
+                "text": "How many I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1602172720268",
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_3_1602308058100"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Platinum - 15 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 15 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 33 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 33 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 22 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 22 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1602322611762",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(6 PM)",
+      "dialog_node": "response_3_1602477148079",
+      "previous_sibling": "response_8_1602477135277"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi $name"
+              },
+              {
+                "text": "How many I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1602172720268",
+      "conditions": "anything_else",
+      "dialog_node": "response_3_1603863262431",
+      "previous_sibling": "response_8_1602308127480"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category  ",
+            "options": [
+              {
+                "label": "Platinum - only few Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - only few Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 30 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 30 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 50 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 50 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_24_1603171727776",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(11 AM)",
+      "dialog_node": "response_33_1603171727776",
+      "previous_sibling": "node_25_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 32 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 32 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 45 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 45 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 20 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 20 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_24_1603171727776",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(2 PM)",
+      "dialog_node": "response_34_1603171727776",
+      "previous_sibling": "response_33_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Platinum - 15 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 15 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 33 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 33 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 22 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 22 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_24_1603171727776",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "response_35_1603171727776",
+      "previous_sibling": "response_34_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 200/-  Gold - Rs. 150/-  Silver - Rs. 100/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 16 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 16 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 26 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 26 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 36 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 36 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_24_1603171727776",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(9 PM)",
+      "dialog_node": "response_36_1603171727776",
+      "previous_sibling": "response_35_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "11 AM",
+                "value": {
+                  "input": {
+                    "text": "11 AM"
+                  }
+                }
+              },
+              {
+                "label": "2 PM",
+                "value": {
+                  "input": {
+                    "text": "2 PM"
+                  }
+                }
+              },
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              },
+              {
+                "label": "9 PM",
+                "value": {
+                  "input": {
+                    "text": "9 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_23_1603171727776",
+      "conditions": "@Bheeshma:(Sandya 35MM RTC X Roads)",
+      "dialog_node": "response_37_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_23_1603171727776",
+      "conditions": "@Bheeshma:(Megha Dilsukhnagar)",
+      "dialog_node": "response_38_1603171727776",
+      "previous_sibling": "response_37_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Rama Krishna",
+                "value": {
+                  "input": {
+                    "text": "Rama Krishna"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_22_1603171727765",
+      "conditions": "@Hindi:Malang",
+      "dialog_node": "response_39_1603171727776",
+      "previous_sibling": "node_23_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "In Following Screens",
+            "options": [
+              {
+                "label": "Sree Ramana 70 MM",
+                "value": {
+                  "input": {
+                    "text": "Sree Ramana 70 MM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_22_1603171727765",
+      "conditions": "@Hindi:(Shakuntala Devi)",
+      "dialog_node": "response_40_1603171727776",
+      "previous_sibling": "response_39_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "IMAX",
+                "value": {
+                  "input": {
+                    "text": "IMAX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_22_1603171727765",
+      "conditions": "@Hindi:(Gunjan Saxsena)",
+      "dialog_node": "response_41_1603171727776",
+      "previous_sibling": "response_40_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon $name"
+              },
+              {
+                "text": "How many I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1602172720268",
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_4_1602308085047",
+      "previous_sibling": "response_3_1602308058100"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "11 AM",
+                "value": {
+                  "input": {
+                    "text": "11 AM"
+                  }
+                }
+              },
+              {
+                "label": "2 PM",
+                "value": {
+                  "input": {
+                    "text": "2 PM"
+                  }
+                }
+              },
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              },
+              {
+                "label": "9 PM",
+                "value": {
+                  "input": {
+                    "text": "9 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1602477566838",
+      "conditions": "@Bheeshma:(Sandya 35MM RTC X Roads)",
+      "dialog_node": "response_4_1602477706233"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets of pay Rs.<? $number * 100 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1603907099179",
+      "conditions": "@Category:gold",
+      "dialog_node": "response_4_1603907169447",
+      "previous_sibling": "response_9_1603907115242"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "Kumar",
+                "value": {
+                  "input": {
+                    "text": "Kumar"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_22_1603171727765",
+      "conditions": "@Hindi:(Gulabo Sitabo)",
+      "dialog_node": "response_42_1603171727776",
+      "previous_sibling": "response_41_1603171727776"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category  ",
+            "options": [
+              {
+                "label": "Platinum - only few Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - only few Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 30 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 30 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 50 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 50 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_46_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(11 AM)",
+      "dialog_node": "response_55_1603173152457",
+      "previous_sibling": "node_47_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 32 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 32 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 45 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 45 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 20 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 20 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_46_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(2 PM)",
+      "dialog_node": "response_56_1603173152457",
+      "previous_sibling": "response_55_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Platinum - 15 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 15 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 33 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 33 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 22 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 22 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_46_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "response_57_1603173152457",
+      "previous_sibling": "response_56_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 200/-  Gold - Rs. 150/-  Silver - Rs. 100/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 16 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 16 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 26 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 26 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 36 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 36 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_46_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(9 PM)",
+      "dialog_node": "response_58_1603173152457",
+      "previous_sibling": "response_57_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "11 AM",
+                "value": {
+                  "input": {
+                    "text": "11 AM"
+                  }
+                }
+              },
+              {
+                "label": "2 PM",
+                "value": {
+                  "input": {
+                    "text": "2 PM"
+                  }
+                }
+              },
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              },
+              {
+                "label": "9 PM",
+                "value": {
+                  "input": {
+                    "text": "9 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_45_1603173152457",
+      "conditions": "@Bheeshma:(Sandya 35MM RTC X Roads)",
+      "dialog_node": "response_59_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_45_1603173152457",
+      "conditions": "@Bheeshma:(Megha Dilsukhnagar)",
+      "dialog_node": "response_60_1603173152457",
+      "previous_sibling": "response_59_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Megha",
+                "value": {
+                  "input": {
+                    "text": "Megha"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1603173152457",
+      "conditions": "@Telugu:Jaanu",
+      "dialog_node": "response_61_1603173152457",
+      "previous_sibling": "node_45_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Hindi Movies",
+            "options": [
+              {
+                "label": "Shakuntala Devi",
+                "value": {
+                  "input": {
+                    "text": "Shakuntala Devi"
+                  }
+                }
+              },
+              {
+                "label": "Gunjan Saxsena",
+                "value": {
+                  "input": {
+                    "text": "Gunjan Saxsena"
+                  }
+                }
+              },
+              {
+                "label": "Malang",
+                "value": {
+                  "input": {
+                    "text": "Malang"
+                  }
+                }
+              },
+              {
+                "label": "Gulabo Sitabo",
+                "value": {
+                  "input": {
+                    "text": "Gulabo Sitabo"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602314657773",
+      "conditions": "@Enquiry:Hindi",
+      "dialog_node": "response_6_1602314795022",
+      "previous_sibling": "response_10_1602314767940"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "In Following Screens",
+            "options": [
+              {
+                "label": "Sandya 35MM RTC X Roads",
+                "value": {
+                  "input": {
+                    "text": "Sandya 35MM RTC X Roads"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1603173152457",
+      "conditions": "@Telugu:Bheeshma",
+      "dialog_node": "response_62_1603173152457",
+      "previous_sibling": "response_61_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "Konark",
+                "value": {
+                  "input": {
+                    "text": "Konark"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1603173152457",
+      "conditions": "@Telugu:V",
+      "dialog_node": "response_63_1603173152457",
+      "previous_sibling": "response_62_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "Sudharshan 35MM",
+                "value": {
+                  "input": {
+                    "text": "Sudharshan 35MM"
+                  }
+                }
+              },
+              {
+                "label": "IMAX",
+                "value": {
+                  "input": {
+                    "text": "IMAX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_44_1603173152457",
+      "conditions": "@Telugu:(Ala Vaikuntapuramlo)",
+      "dialog_node": "response_64_1603173152457",
+      "previous_sibling": "response_63_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "English Movies",
+            "options": [
+              {
+                "label": "Bloodshot",
+                "value": {
+                  "input": {
+                    "text": "Bloodshot"
+                  }
+                }
+              },
+              {
+                "label": "The Jungle Book",
+                "value": {
+                  "input": {
+                    "text": "The Jungle Book"
+                  }
+                }
+              },
+              {
+                "label": "Scoob!",
+                "value": {
+                  "input": {
+                    "text": "Scoob!"
+                  }
+                }
+              },
+              {
+                "label": "The Lion King",
+                "value": {
+                  "input": {
+                    "text": "The Lion King"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1602314657773",
+      "conditions": "@Enquiry:English",
+      "dialog_node": "response_7_1602314804024",
+      "previous_sibling": "response_6_1602314795022"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category  ",
+            "options": [
+              {
+                "label": "Platinum - only few Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - only few Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 30 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 30 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 50 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 50 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_67_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(11 AM)",
+      "dialog_node": "response_76_1603173152457",
+      "previous_sibling": "node_68_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 32 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 32 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 45 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 45 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 20 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 20 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_67_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(2 PM)",
+      "dialog_node": "response_77_1603173152457",
+      "previous_sibling": "response_76_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Platinum - 15 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 15 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 33 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 33 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 22 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 22 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_67_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "response_78_1603173152457",
+      "previous_sibling": "response_77_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 200/-  Gold - Rs. 150/-  Silver - Rs. 100/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 16 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 16 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 26 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 26 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 36 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 36 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_67_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(9 PM)",
+      "dialog_node": "response_79_1603173152457",
+      "previous_sibling": "response_78_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "11 AM",
+                "value": {
+                  "input": {
+                    "text": "11 AM"
+                  }
+                }
+              },
+              {
+                "label": "2 PM",
+                "value": {
+                  "input": {
+                    "text": "2 PM"
+                  }
+                }
+              },
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              },
+              {
+                "label": "9 PM",
+                "value": {
+                  "input": {
+                    "text": "9 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_66_1603173152457",
+      "conditions": "@Bheeshma:(Sandya 35MM RTC X Roads)",
+      "dialog_node": "response_80_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Show Timings",
+            "options": [
+              {
+                "label": "6 PM",
+                "value": {
+                  "input": {
+                    "text": "6 PM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_66_1603173152457",
+      "conditions": "@Bheeshma:(Megha Dilsukhnagar)",
+      "dialog_node": "response_81_1603173152457",
+      "previous_sibling": "response_80_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning $name"
+              },
+              {
+                "text": "How many I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1602172720268",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_8_1602308102646",
+      "previous_sibling": "response_4_1602308085047"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello $name"
+              },
+              {
+                "text": "How many I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1602172720268",
+      "conditions": "@Greetings:Hello",
+      "dialog_node": "response_8_1602308127480",
+      "previous_sibling": "response_8_1602308102646"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://1.bp.blogspot.com/-7FGVFNRzhqo/XzQEQTq_HYI/AAAAAAAAT94/qVzmNdk6YXAP8de21qjYz_3_n0IqR7F6gCLcBGAsYHQ/s1600/V%2Bthe%2Bmovie.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "Konark",
+                "value": {
+                  "input": {
+                    "text": "Konark"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1602316641677",
+      "conditions": "@Telugu:V",
+      "dialog_node": "response_8_1602322456614",
+      "previous_sibling": "response_9_1602322388957"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 32 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 32 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 45 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 45 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 20 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 20 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1602322611762",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(2 PM)",
+      "dialog_node": "response_8_1602477135277",
+      "previous_sibling": "response_10_1602322856867"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 200/-  Gold - Rs. 150/-  Silver - Rs. 100/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 16 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 16 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 26 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 26 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 36 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 36 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1602322611762",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(9 PM)",
+      "dialog_node": "response_8_1602477173839",
+      "previous_sibling": "response_3_1602477148079"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Rama Krishna",
+                "value": {
+                  "input": {
+                    "text": "Rama Krishna"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_65_1603173152457",
+      "conditions": "@Hindi:Malang",
+      "dialog_node": "response_82_1603173152457",
+      "previous_sibling": "node_66_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "In Following Screens",
+            "options": [
+              {
+                "label": "Sree Ramana 70 MM",
+                "value": {
+                  "input": {
+                    "text": "Sree Ramana 70 MM"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_65_1603173152457",
+      "conditions": "@Hindi:(Shakuntala Devi)",
+      "dialog_node": "response_83_1603173152457",
+      "previous_sibling": "response_82_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "IMAX",
+                "value": {
+                  "input": {
+                    "text": "IMAX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_65_1603173152457",
+      "conditions": "@Hindi:(Gunjan Saxsena)",
+      "dialog_node": "response_84_1603173152457",
+      "previous_sibling": "response_83_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "Kumar",
+                "value": {
+                  "input": {
+                    "text": "Kumar"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_65_1603173152457",
+      "conditions": "@Hindi:(Gulabo Sitabo)",
+      "dialog_node": "response_85_1603173152457",
+      "previous_sibling": "response_84_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://i.ytimg.com/vi/GxMej1bP2Gw/maxresdefault.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "In Following Screens",
+            "options": [
+              {
+                "label": "Sandya 35MM RTC X Roads",
+                "value": {
+                  "input": {
+                    "text": "Sandya 35MM RTC X Roads"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1602316641677",
+      "conditions": "@Telugu:Bheeshma",
+      "dialog_node": "response_9_1602322388957",
+      "previous_sibling": "response_1_1602322232417"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "source": "https://assets.thehansindia.com/h-upload/2020/01/11/253181-ala-vaikunthapurramuloo.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Showing in",
+            "options": [
+              {
+                "label": "Sudharshan 35MM",
+                "value": {
+                  "input": {
+                    "text": "Sudharshan 35MM"
+                  }
+                }
+              },
+              {
+                "label": "IMAX",
+                "value": {
+                  "input": {
+                    "text": "IMAX"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1602316641677",
+      "conditions": "@Telugu:(Ala Vaikuntapuramlo)",
+      "dialog_node": "response_9_1603168017928",
+      "previous_sibling": "response_8_1602322456614"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets of pay Rs.<? $number * $silver ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_122_1603174795246",
+      "context": {
+        "gold": 100,
+        "email": "@email.literal",
+        "mobile": "@mobile.literal",
+        "silver": 50,
+        "platinum": 150
+      },
+      "disabled": true,
+      "conditions": "@",
+      "dialog_node": "response_9_1603907064265",
+      "previous_sibling": "node_4_1603907099179"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets of pay Rs.<? $number * 150 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1603907099179",
+      "conditions": "@Category:platinum",
+      "dialog_node": "response_9_1603907115242"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you $name for booking $number tickets of pay Rs.<? $number * 50 ?>/- using $Payment . Details sent on your mobile number $mobile and also to your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1603907099179",
+      "conditions": "@Category:silver",
+      "dialog_node": "response_9_1603907187708",
+      "previous_sibling": "response_4_1603907169447"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category  ",
+            "options": [
+              {
+                "label": "Platinum - only few Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - only few Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 30 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 30 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 50 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 50 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_88_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(11 AM)",
+      "dialog_node": "response_97_1603173152457",
+      "previous_sibling": "node_89_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select the Category",
+            "options": [
+              {
+                "label": "Platinum - 32 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 32 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 45 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 45 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 20 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 20 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_88_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS:(2 PM)",
+      "dialog_node": "response_98_1603173152457",
+      "previous_sibling": "response_97_1603173152457"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Platinum - Rs. 150/-  Gold - Rs. 100/-  Silver - Rs. 50/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Platinum - 15 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Platinum - 15 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Gold - 33 Tickets left",
+                "value": {
+                  "input": {
+                    "text": "Gold - 33 Tickets left"
+                  }
+                }
+              },
+              {
+                "label": "Silver - 22 Tickets Left",
+                "value": {
+                  "input": {
+                    "text": "Silver - 22 Tickets Left"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_88_1603173152457",
+      "conditions": "@Sandya-35MM-RTC-X-ROADS",
+      "dialog_node": "response_99_1603173152457",
+      "previous_sibling": "response_98_1603173152457"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1603033828526",
+      "variable": "$date",
+      "dialog_node": "slot_1_1603908098138",
+      "previous_sibling": "node_3_1603094899378"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_25_1603171727776",
+      "variable": "$number",
+      "dialog_node": "slot_27_1603171727776",
+      "previous_sibling": "node_26_1603171727776"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_25_1603171727776",
+      "variable": "$Payment",
+      "dialog_node": "slot_30_1603171727776",
+      "previous_sibling": "slot_27_1603171727776"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1603033828526",
+      "variable": "$number",
+      "dialog_node": "slot_3_1603033973623",
+      "previous_sibling": "slot_1_1603908098138"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1603033828526",
+      "variable": "$Payment",
+      "dialog_node": "slot_4_1603034170399",
+      "previous_sibling": "slot_3_1603033973623"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_47_1603173152457",
+      "variable": "$number",
+      "dialog_node": "slot_49_1603173152457",
+      "previous_sibling": "node_48_1603173152457"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_47_1603173152457",
+      "variable": "$Payment",
+      "dialog_node": "slot_52_1603173152457",
+      "previous_sibling": "slot_49_1603173152457"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1603171713735",
+      "variable": "$number",
+      "dialog_node": "slot_6_1603171713736",
+      "previous_sibling": "node_5_1603171713735"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_68_1603173152457",
+      "variable": "$number",
+      "dialog_node": "slot_70_1603173152457",
+      "previous_sibling": "node_69_1603173152457"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_68_1603173152457",
+      "variable": "$Payment",
+      "dialog_node": "slot_73_1603173152457",
+      "previous_sibling": "slot_70_1603173152457"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1603173152457",
+      "variable": "$number",
+      "dialog_node": "slot_91_1603173152457",
+      "previous_sibling": "node_90_1603173152457"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1603171713735",
+      "variable": "$Payment",
+      "dialog_node": "slot_9_1603171713736",
+      "previous_sibling": "slot_6_1603171713736"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_89_1603173152457",
+      "variable": "$Payment",
+      "dialog_node": "slot_94_1603173152457",
+      "previous_sibling": "slot_91_1603173152457"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "source": "https://1.bp.blogspot.com/-6VQ3NZlaDpA/X4wysDXcBJI/AAAAAAAAAc8/6DWhPve6gwMzQjHILehzBDHWTGotNSy3wCLcBGAsYHQ/s960/movie.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Welcome to MHP's movie ticket booking chat!! I am bot capable of showing latest Telugu, Hindi and English movies and book movie tickets. Please provide your name"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "MHP Movie Ticket Booking Bot",
+  "language": "en",
+  "description": ""
+}
